@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <style>
+    /* Estilos específicos para telas menores */
+    @media (max-width: 768px) {
+      .flex {
+        flex-direction: column;
+      }
+
+      .md:w-396px {
+        width: 100%;
+      }
+
+      .items-end {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .items-end ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+      }
+
+      .items-end ul li {
+        margin: 0.5rem 0;
+      }
+
+    }
+  </style>
+
+</head>
+
+<title>DashBoard Intercept</title>
+
+<body>
+
+  <div class="flex md:w-396px md:place-self-end">
+    <div class="flex bg-barra w-full px-3 md:px-12 py-5">
+      <h1 class="text-cinza-escrita  font-bold text-xl">Webapp<span class="font-normal">Pro</span></h1>
+      <div class="flex items-center mx-auto">
+        <div class="items-end flex-1  text-gray-300 font-bold hidden md:flex">
+          <nav class="flex-1">
+            <ul class="flex justify-end flex-1">
+              <li class="flex ml-96">
+                <a href="#" class="hover:text-hoverspt text-sm">Help/Support</a>
+              </li>
+              <li class="flex ml-8">
+                <a href="#" class="hover:text-hoverspt text-sm pr-6">Settings</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="absolute top-0 right-10 mr-5 bg-preto-barra p-5 pr-7 pl-7 cursor-pointer">
+            <h1 class="text-gray-300 flex items-center text-xs ">
+              <img src="/img/diego.png" alt="" class="w-5 h-5 rounded-full mr-2">
+              BRUNO SANTOS
+              <span class="material-symbols-outlined">
+                arrow_drop_down
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-row divide-x-2 divide-gray-200 h-[92vh]">
+    <div id="menu" class="flex flex-col items-start bg-begee h-full">
+      <div class=" flex items-center cursor-pointer">
+        <span class=" bg-red-400 flex   border-red-400 hover:bg-red-700  p-5 material-symbols-outlined ">Dashboard</span>
+        <span class="text-xs font-bold border-2 p-555 text-gray-700 w-41">DASHBOARD</span>
+      </div>
+      <div class="flex items-center  border-l-4 border-l-blue-400">
+
+        <span class="p-4 flex border-2  material-symbols-outlined ">person</span>
+        <a href="/src/incremento.html" class="text-xs font-bold border-2 p-5 w-40 text-gray-700">MEMBERS</a>
+      </div>
+
+      <div class="flex items-center border-l-4 border-l-green-400 ">
+        <span class="p-4 flex border-2 material-symbols-outlined ">tour</span>
+        <span class="text-xs font-bold  border-2 p-5 w-40 text-gray-700">TOURNAMENTS</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-purple-400">
+        <span class=" p-4 flex border-2 material-symbols-outlined ">account_balance_wallet</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">CASH GAMES</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-blue-800 ">
+        <span class=" p-4 flex border-2 material-symbols-outlined ">calendar_today</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">SCHEDULES</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-orange-400">
+        <span class=" p-4 flex border-2 material-symbols-outlined ">reorder</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">LEAGUES</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-amber-800">
+        <span class=" p-4 flex border-2 material-symbols-outlined ">forum</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">BLOGS</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-emerald-400 ">
+        <span class=" p-4 flex border-2 material-symbols-outlined ">note</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">PAGES</span>
+      </div>
+      <div class="flex items-center border-l-4 border-l-gray-400 ">
+        <span class="p-4 flex border-2 material-symbols-outlined ">info</span>
+        <span class="text-xs font-bold border-2 p-5 w-40 text-gray-700">CLUB INFO</span>
+      </div>
+    </div>
+    <div id="conteudo" class="bg-branco w-full">
+      <div class="bg-red-400 h-1 w-full flex"></div>
+      <div class="flex items-center p-3 mb border-b-2 border-zinc-900/20">
+        <span style="font-size: 40px" class="text-gray-600 material-symbols-outlined">
+          chart_data
+        </span>
+        <span class="text-gray-700 ml-3 text-xl">Club Activity for Club Name</span>
+        <span class="material-symbols-outlined ml-auto mr-5 text-escritadn text-base">
+          dashboard
+        </span>
+        <span class="mr-8 text-escritadn font-bold text-base">DASHBOARD</span>
+      </div>
+      <div class="p-4 ml-4 mr-4">
+        <h1 class="font-bold text-lg">Project Manage</h1>
+        <h2 class="text-gray-500 text-xs mb-2 mt-0">Edit project manage information</h2>
+        <div class=" border-b-2 mb-4 border-zinc-900/20"></div>
+        <div class="flex ">
+          <button class="ml-5 mr-4 bg-green-100 text-green-500 rounded-lg pr-2 pl-2 text-xs">All(11)</button>
+          <button class=" bg-red-100 text-red-500 rounded-lg pr-2 pl-2 text-xs">Trashed(11)</button>
+          <span class="flex justify-end flex-1 mr-4">
+            <span class="rounded-lg p-1 bg-yellow-50 text-gray-400 material-symbols-outlined cursor-pointer">
+              search
+            </span>
+            <input class="bg-yellow-50" placeholder="Search" type="Search"></span>
+        </div>
+      </div>
+      <div id="fixo" class="pl-6 bg-yellow-50 pb-2 pt-2">
+        <div class="flex  ">
+
+          <label class="flex flex-1 ">
+            <input type="checkbox" class=" ml-3 mr-2">
+            Name
+          </label>
+          <span class="ml-8">Location</span>
+          <span class="ml-24 mr-2020">Building Height</span>
+          <span class="mr-32">Land Area</span>
+          <span class="mr-999">Hand Over Date</span>
+          <span class="mr-36">Options</span>
+        </div>
+      </div>
+
+      <div id="info" class="pl-6 bg-begee pt-2 pb-2" style="max-height: 400px; overflow-y: auto;">
+        <div class="flex  justify-between bg-begee pt-2 pb-2">
+          <label class="flex flex-1 ">
+            <input type="checkbox" class=" ml-3 mr-2">
+            Bruno Santos
+          </label>
+          <span class="flex-1">São Paulo/Brasil</span>
+          <span class="flex-1">165</span>
+          <span class="flex-1">35000</span>
+          <span class="flex-1">01/09/2023</span>
+          <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+              <span style="font-size: small;" class="material-symbols-outlined">
+                edit_square
+              </span>
+              Edit</button>
+            <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                <span style="font-size: small" class="material-symbols-outlined ">
+                  delete
+                </span>
+                Delete</button>
+            </span>
+        </div>
+        <div>
+          <div class="flex  justify-between  pt-2 pb-2 ">
+            <label class="flex flex-1 ">
+              <input type="checkbox" checked class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+          <div class="flex  justify-between bg-begee pt-2 pb-2">
+            <label class="flex flex-1 ">
+              <input type="checkbox" class=" ml-3 mr-2">
+              Bruno Santos
+            </label>
+            <span class="flex-1">São Paulo/Brasil</span>
+            <span class="flex-1">165</span>
+            <span class="flex-1">35000</span>
+            <span class="flex-1">01/09/2023</span>
+            <span class="mr-24"><button style="font-size: 10px;" class="flex-1 rounded-md bg-blue-200 text-blue-500 pr-2 pl-2">
+                <span style="font-size: small;" class="material-symbols-outlined">
+                  edit_square
+                </span>
+                Edit</button>
+              <span><button style="font-size: 10px" class="flex-1 rounded-md  bg-red-200 text-red-500 pr-2 pl-2">
+                  <span style="font-size: small" class="material-symbols-outlined ">
+                    delete
+                  </span>
+                  Delete</button>
+              </span>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
